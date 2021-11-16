@@ -1,0 +1,1144 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+} 
+
+
+/*ESCRITORIO LARGO*/
+
+@media(min-width:1200px){
+
+html{
+	height: 100%;
+}
+
+body{
+	
+	font-size: 1.2rem;
+	min-height: 100%; 
+}
+
+.contenedor{
+	display: grid;
+	gap: 5px;
+	grid-template: 
+	"header" 130px
+	"navbar" 50px 
+	"main"	auto
+	"footer" 20px
+}
+
+.header{
+	grid-area: header;
+	background-color: white;
+	text-align: center;
+}
+
+.logotipo{
+	margin-top:1%;
+	height:60px;
+
+}
+
+.navbar{
+ 	height:50px;
+	grid-area: navbar;
+	background-color:#1B1464;
+}
+
+#menu ul {
+	text-align: center;
+	margin-top: 1%;
+   
+}
+
+#menu li {
+	text-decoration: none;
+	color: white;
+	display:inline;
+     padding-left:3%;
+     padding-right:4%;
+
+   
+}
+
+#menu li a {
+	text-align: center;
+	align-content: center;
+	text-decoration: none;
+	color: white;
+	display:inline;
+	padding-top:20px;
+    padding-left:10px;
+    padding-right:10px;
+    font-family: 'Press Start 2P', cursive;
+
+ 
+     
+}
+
+
+.main{
+	height: 610px;
+	grid-area: main;
+	background: linear-gradient(to top, #9999cc, #FFFFFF)
+
+}
+
+.main #seccion {
+	padding:1%;
+	height: 610px;
+	width: 100%;
+}
+
+.titular{
+	font-family: 'Press Start 2P', cursive;
+	font-size:30px; 
+	color:#FF0000;
+}
+
+
+.titulo{
+	font-family: 'Press Start 2P', cursive;
+	font-size:20px; 
+	color:#FF0000;
+}
+.parrafo{
+	font-size:20px;
+	color:#000000;
+}
+
+.fotografía{
+    margin-left: 10px;
+    margin-top:10px;
+     width:180px;
+     height:180px;
+     border-radius:10px;
+}
+
+.fotografía2{
+
+    float:left;
+	 
+    margin-left: 10px;
+    margin-top:10px;
+     width:180px;
+     height:180px;
+     border-radius:10px;
+}
+
+#scroll{
+	position:static;
+	margin-top:2%;
+	float:left;
+	width:450px;
+    overflow-x: hidden;
+    height:490px;
+    margin-left:10px;
+    margin-right:10px;
+
+}
+
+.main #superpuesto {
+	float:right;
+	 position: absolute;
+    top:20%;
+    left:530px;
+    right: 10px;
+    margin: 5%;
+    text-align: left;
+    color: #1B1464 ;
+    text-shadow: 1px 1px 2px white;
+
+
+}
+.main #foto{
+position:absolute;
+top:30%;
+left:50px;
+right: 10px;
+width:500px;
+height:400px;
+border-radius:20px;
+}
+
+.main #foto1{
+position:absolute;
+top:-1%;
+left:630px;
+right: 10px;
+width:500px;
+height:400px;
+border-radius:20px;
+
+
+}
+
+
+
+.main #video{
+	float:left;
+	position:absolute;
+	top:33%;
+	width:560px;
+	height:470px; 
+	border-radius:20px;
+}
+
+
+
+.main #formulario{
+	position:absolute;
+	padding:1%;
+	margin-top:30px;
+ 	width:530px;
+	height:auto;
+	columns:2;
+	top:40%;
+	box-shadow: 0px 0px 10px #fff;
+	border-radius: 15px;
+	background-color:#9999cc;
+
+}
+
+#cont_texto {
+position:absolute;
+
+margin: 5%;
+width: 300%;
+height:300px;
+background:#9999cc;
+font-size:0.9em;
+width: 400px;
+color: #FFF;
+padding: 1%;
+text-align: left;
+box-shadow: 0px 0px 10px #fff;
+border-radius: 15px;
+columns:2;
+column-width:200px;
+
+}
+
+#cont_texto h1 {
+	
+	color: white;
+}
+
+
+
+
+.footer{
+	height:80px;
+	padding:1%;
+	grid-area: footer;
+	background-color:#1B1464;
+}
+
+ul.footer_horizontal1{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    float:right; 
+}
+
+ul.footer_horizontal1 li{
+    display:inline;
+}
+
+ul.footer_horizontal1 li a{
+    margin-left:15px;
+    margin-top:10px;
+    width:250px;
+    height:30px;
+    line-height:30px;
+    background-color:#000000;
+    display:inline-block;
+    text-align:center;
+    color:white;
+    text-decoration:none;
+    font-weight:normal;
+    font-size:13px;
+    font-family: 'Press Start 2P', cursive;
+    border-radius:5px;
+
+}
+
+ul.footer_horizontal1 li a:hover{
+    background-color:#FF0000 ;
+
+}
+
+.iconos {
+    margin-top:10px;
+    margin-left:15px;
+    float:left;
+    border-radius:5px;
+}
+
+
+
+}
+
+
+
+}
+
+
+
+
+/*ESCRITORIO*/ 
+@media (min-width: 992px) {
+
+html{
+	height: 100%;
+}
+
+body{
+	
+	font-size: 1.2rem;
+	min-height: 100%; 
+}
+
+.contenedor{
+	display: grid;
+	gap: 5px;
+	grid-template: 
+	"header" 130px
+	"navbar" 50px 
+	"main"	auto
+	"footer" 20px
+}
+
+.header{
+	grid-area: header;
+	background-color: white;
+	text-align: center;
+}
+
+.logotipo{
+	margin-top:1%;
+	height:60px;
+
+}
+
+.navbar{
+ 	height:50px;
+	grid-area: navbar;
+	background-color:#1B1464;
+}
+
+#menu ul {
+	text-align: center;
+	margin-top: 1%;
+   
+}
+
+#menu li {
+	text-decoration: none;
+	color: white;
+	display:inline;
+     padding-left:3%;
+     padding-right:4%;
+
+   
+}
+
+#menu li a {
+	text-align: center;
+	align-content: center;
+	text-decoration: none;
+	color: white;
+	display:inline;
+	padding-top:20px;
+    padding-left:10px;
+    padding-right:10px;
+    font-family: 'Press Start 2P', cursive;
+
+ 
+     
+}
+
+
+.main{
+	height: 610px;
+	grid-area: main;
+	background: linear-gradient(to top, #9999cc, #FFFFFF)
+
+}
+
+.main #seccion {
+	padding:1%;
+	height: 610px;
+	width: 100%;
+}
+
+.titular{
+	font-family: 'Press Start 2P', cursive;
+	font-size:30px; 
+	color:#FF0000;
+}
+
+
+.titulo{
+	font-family: 'Press Start 2P', cursive;
+	font-size:20px; 
+	color:#FF0000;
+}
+.parrafo{
+	font-size:20px;
+	color:#000000;
+}
+
+.fotografía{
+    margin-left: 10px;
+    margin-top:10px;
+     width:180px;
+     height:180px;
+     border-radius:10px;
+}
+
+.fotografía2{
+
+    float:left;
+	 
+    margin-left: 10px;
+    margin-top:10px;
+     width:180px;
+     height:180px;
+     border-radius:10px;
+}
+
+#scroll{
+	position:static;
+	margin-top:2%;
+	float:left;
+	width:450px;
+    overflow-x: hidden;
+    height:490px;
+    margin-left:10px;
+    margin-right:10px;
+
+}
+
+.main #superpuesto {
+	float:right;
+	 position: absolute;
+    top:20%;
+    left:530px;
+    right: 10px;
+    margin: 5%;
+    text-align: left;
+    color: #1B1464 ;
+    text-shadow: 1px 1px 2px white;
+
+
+}
+.main #foto{
+position:absolute;
+top:30%;
+left:50px;
+right: 10px;
+width:500px;
+height:400px;
+border-radius:20px;
+}
+
+.main #foto1{
+position:absolute;
+top:-1%;
+left:630px;
+right: 10px;
+width:500px;
+height:400px;
+border-radius:20px;
+
+
+}
+
+
+
+.main #video{
+	float:left;
+	position:absolute;
+	top:33%;
+	width:560px;
+	height:470px; 
+	border-radius:20px;
+}
+
+
+
+.main #formulario{
+	position:absolute;
+	padding:1%;
+	margin-top:30px;
+ 	width:530px;
+	height:auto;
+	columns:2;
+	top:40%;
+	box-shadow: 0px 0px 10px #fff;
+	border-radius: 15px;
+	background-color:#9999cc;
+
+}
+
+#cont_texto {
+position:absolute;
+
+margin: 5%;
+width: 300%;
+height:300px;
+background:#9999cc;
+font-size:0.9em;
+width: 400px;
+color: #FFF;
+padding: 1%;
+text-align: left;
+box-shadow: 0px 0px 10px #fff;
+border-radius: 15px;
+columns:2;
+column-width:200px;
+
+}
+
+#cont_texto h1 {
+	
+	color: white;
+}
+
+
+
+
+.footer{
+	height:80px;
+	padding:1%;
+	grid-area: footer;
+	background-color:#1B1464;
+}
+
+ul.footer_horizontal1{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    float:right; 
+}
+
+ul.footer_horizontal1 li{
+    display:inline;
+}
+
+ul.footer_horizontal1 li a{
+    margin-left:15px;
+    margin-top:10px;
+    width:250px;
+    height:30px;
+    line-height:30px;
+    background-color:#000000;
+    display:inline-block;
+    text-align:center;
+    color:white;
+    text-decoration:none;
+    font-weight:normal;
+    font-size:13px;
+    font-family: 'Press Start 2P', cursive;
+    border-radius:5px;
+
+}
+
+ul.footer_horizontal1 li a:hover{
+    background-color:#FF0000 ;
+
+}
+
+.iconos {
+    margin-top:10px;
+    margin-left:15px;
+    float:left;
+    border-radius:5px;
+}
+
+
+
+}
+
+
+
+/*TABLET*/
+
+@media (min-width: 768px) and (max-width: 991px){
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html{
+	height: 100%;
+}
+
+body{
+	
+	font-size: 1.2rem;
+	min-height: 100%; 
+}
+
+
+
+.contenedor{
+		grid-template: 
+		"header 	header 	header" 	100px 
+		"navbar 	navbar navbar" 	50px
+		" 	main  main	main" 	auto
+		"footer 	footer 	footer" 	100px /
+		 400px 		auto 	200px;
+	}
+
+.header{
+	grid-area: header;
+	background-color: white;
+	text-align: center;
+}
+
+.logotipo{
+	margin-top:1%;
+	height:60px;
+
+}
+
+.navbar{
+ 	height:50px;
+	grid-area: navbar;
+	background-color:#1B1464;
+}
+
+#menu ul {
+	text-align: center;
+	margin-top: 1%;
+   
+}
+
+#menu li {
+	text-decoration: none;
+	color: white;
+	display:inline;
+     padding-left:3%;
+     padding-right:4%;
+
+   
+}
+
+#menu li a {
+	text-align: center;
+	align-content: center;
+	text-decoration: none;
+	color: white;
+	display:inline;
+	padding-top:20px;
+    padding-left:10px;
+    padding-right:10px;
+    font-family: 'Press Start 2P', cursive;
+
+ 
+     
+}
+
+
+.main{
+	height: 830px;
+	grid-area: main;
+	background: linear-gradient(to top, #9999cc, #FFFFFF)
+
+}
+
+.main #seccion {
+	padding:1%;
+	height: 800px;
+	width: 100%;
+}
+
+.titular{
+	font-family: 'Press Start 2P', cursive;
+	font-size:30px; 
+	color:#FF0000;
+}
+
+
+.titulo{
+	font-family: 'Press Start 2P', cursive;
+	font-size:20px; 
+	color:#FF0000;
+}
+.parrafo{
+	font-size:20px;
+	color:#000000;
+}
+
+.fotografía{
+    margin-left: 10px;
+    margin-top:10px;
+     width:150px;
+     height:200px;
+     border-radius:10px;
+}
+
+.fotografía2{
+
+    float:left;
+	 
+    margin-left: 10px;
+    margin-top:10px;
+     width:180px;
+     height:180px;
+     border-radius:10px;
+}
+
+#scroll{
+	position:static;
+	margin-top:2%;
+	float:left;
+	width:450px;
+    overflow-x: hidden;
+    height:490px;
+    margin-left:10px;
+    margin-right:10px;
+
+}
+
+.main #superpuesto {
+	 position: absolute;
+    top:20%;
+    left:360px;
+    right: 10px;
+    margin: 5%;
+    text-align: left;
+    color: #1B1464 ;
+    text-shadow: 1px 1px 2px white;
+
+
+}
+.main #foto{
+position:absolute;
+top:30%;
+left:25px;
+right: 10px;
+width:300px;
+height:400px;
+border-radius:20px;
+}
+
+.main #foto1{
+position:absolute;
+top:-1%;
+left:540px;
+right: 10px;
+width:370px;
+height:400px;
+border-radius:20px;
+
+
+}
+
+
+
+.main #video{
+	float:left;
+	position:absolute;
+	top:28%;
+	width:350px;
+	height:600px; 
+	border-radius:20px;
+}
+
+
+
+.main #formulario{
+	position:absolute;
+	padding:1%;
+	width:530px;
+	height:auto;
+	columns:2;
+	top:40%;
+	box-shadow: 0px 0px 10px #fff;
+	border-radius: 15px;
+	background-color:#9999cc;
+
+}
+
+#cont_texto {
+position:absolute;
+
+margin: 5%;
+width: 300%;
+height:300px;
+background:#9999cc;
+font-size:0.9em;
+width: 400px;
+color: #FFF;
+padding: 1%;
+text-align: left;
+box-shadow: 0px 0px 10px #fff;
+border-radius: 15px;
+columns:2;
+column-width:200px;
+
+}
+
+#cont_texto h1 {
+	
+	color: white;
+}
+
+
+
+
+.footer{
+	height:80px;
+	padding:1%;
+	grid-area: footer;
+	background-color:#1B1464;
+}
+
+ul.footer_horizontal1{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    float:right; 
+}
+
+ul.footer_horizontal1 li{
+    display:inline;
+}
+
+ul.footer_horizontal1 li a{
+    margin-left:15px;
+    margin-top:10px;
+    width:250px;
+    height:30px;
+    line-height:30px;
+    background-color:#000000;
+    display:inline-block;
+    text-align:center;
+    color:white;
+    text-decoration:none;
+    font-weight:normal;
+    font-size:13px;
+    font-family: 'Press Start 2P', cursive;
+    border-radius:5px;
+
+}
+
+ul.footer_horizontal1 li a:hover{
+    background-color:#FF0000 ;
+
+}
+
+.iconos {
+    margin-top:10px;
+    margin-left:15px;
+    float:left;
+    border-radius:5px;
+}
+
+}
+
+
+/*MOBILE*/ 
+
+@media (min-width: 400px) and (max-width: 767px){
+
+
+.contenedor{
+		grid-template: 
+	   "header " 100px
+	   "navbar" 250px
+	   "main" auto
+	   "seccion " auto
+	   "footer" 70px
+		}
+
+.header{
+	grid-area: header;
+	background-color: white;
+	text-align: center;
+}
+
+.logotipo{
+	margin-top:1%;
+	height:60px;
+
+}
+
+.navbar{
+ 	height:50px;
+	grid-area: navbar;
+	background-color:#1B1464;
+}
+
+#menu ul {
+	text-align: center;
+	margin-top: 1%;
+   
+}
+
+#menu li {
+	text-decoration: none;
+	color: white;
+	display:inline;
+     padding-left:3%;
+     padding-right:4%;
+
+   
+}
+
+#menu li a {
+	text-align: center;
+	align-content: center;
+	text-decoration: none;
+	color: white;
+	display:inline;
+	padding-top:20px;
+    padding-left:10px;
+    padding-right:10px;
+    font-family: 'Press Start 2P', cursive;
+
+ 
+     
+}
+
+
+.main{
+	height: 900px;
+	grid-area: main;
+	background: linear-gradient(to top, #9999cc, #FFFFFF)
+
+}
+
+
+
+.main #seccion {
+	padding:1%;
+	width: 100%;
+}
+
+.titular{
+	font-family: 'Press Start 2P', cursive;
+	font-size:30px; 
+	color:#FF0000;
+}
+
+
+.titulo{
+	font-family: 'Press Start 2P', cursive;
+	font-size:20px; 
+	color:#FF0000;
+}
+.parrafo{
+	font-size:20px;
+	color:#000000;
+}
+
+.fotografía{
+    margin-left: 10px;
+    margin-top:10px;
+     width:180px;
+     height:180px;
+     border-radius:10px;
+}
+
+.fotografía2{
+
+    float:left;
+	 
+    margin-left: 10px;
+    margin-top:10px;
+     width:180px;
+     height:180px;
+     border-radius:10px;
+}
+
+#scroll{
+	position:static;
+	margin-top:2%;
+	float:left;
+	width:450px;
+    overflow-x: hidden;
+    height:490px;
+    margin-left:10px;
+    margin-right:10px;
+
+}
+
+.main #superpuesto {
+	 position: absolute;
+    top:20%;
+    float:left;
+
+    right: 10px;
+    margin: 5%;
+    text-align: left;
+    color: #1B1464 ;
+    text-shadow: 1px 1px 2px white;
+
+
+}
+
+.main #superpuesto2 { 
+	 position: absolute;
+    top:20%;
+    float:left;
+
+    right: 10px;
+    margin: 5%;
+    text-align: left;
+    color: #1B1464 ;
+    text-shadow: 1px 1px 2px white;
+    visibility:hidden;
+
+
+}
+
+
+
+.main #foto{
+position:absolute;
+top:30%;
+float:left;
+left:10px;
+right: 10px;
+width:250px;
+height:200px;
+border-radius:20px;
+visibility:hidden;
+}
+
+.main #foto1{
+position:absolute;
+top:-1%;
+left:630px;
+right: 10px;
+width:250px;
+height:400px;
+border-radius:20px;
+float:left;
+visibility:hidden;
+
+}
+
+
+
+.main #video{
+	float:left;
+	position:absolute;
+	top:28%;
+	width:560px;
+	height:490px; 
+	border-radius:20px;
+	visibility:hidden;
+}
+
+
+
+.main #formulario{
+	position:absolute;
+	padding:1%;
+	width:480px;
+	height:auto;
+	 
+	top:40%;
+	box-shadow: 0px 0px 10px #fff;
+	border-radius: 15px;
+	background-color:#9999cc;
+
+}
+
+#cont_texto {
+position:absolute;
+
+margin: 5%;
+width: 300%;
+height:300px;
+background:#9999cc;
+font-size:0.9em;
+width: 400px;
+color: #FFF;
+padding: 1%;
+text-align: left;
+box-shadow: 0px 0px 10px #fff;
+border-radius: 15px;
+columns:2;
+column-width:200px;
+
+}
+
+#cont_texto h1 {
+	
+	color: white;
+}
+
+
+
+
+.footer{
+	height:80px;
+	padding:1%;
+	grid-area: footer;
+	background-color:#1B1464;
+}
+
+ul.footer_horizontal1{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    float:right; 
+}
+
+ul.footer_horizontal1 li{
+    display:inline;
+}
+
+ul.footer_horizontal1 li a{
+    margin-left:15px;
+    margin-top:10px;
+    width:250px;
+    height:30px;
+    line-height:30px;
+    background-color:#000000;
+    display:inline-block;
+    text-align:center;
+    color:white;
+    text-decoration:none;
+    font-weight:normal;
+    font-size:13px;
+    font-family: 'Press Start 2P', cursive;
+    border-radius:5px;
+
+}
+
+ul.footer_horizontal1 li a:hover{
+    background-color:#FF0000 ;
+
+}
+
+.iconos {
+	width:55px;
+	height:50px;
+    margin-top:10px;
+    margin-left:15px;
+    float:left;
+    border-radius:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
